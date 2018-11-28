@@ -1,0 +1,59 @@
+body {
+  background-image: url("../835759-jungle.jpg");
+  /* background-size: cover; */
+  color: white;
+  font-size: 50px;
+  box-shadow: 5, 5, 5, 5, red;
+  text-align: center;
+}
+.ttt-grid {
+  display: flex;
+  height: 620px;
+  width: 620px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: none;
+  border-style: double;
+  border-color: black;
+  /* border: 2px solid black; */
+  list-style-type: none;
+  margin: none;
+  padding: none;
+  font-size: 150px;
+  color: white;
+  text-align: center;
+}
+
+.marked {
+  background-color: none;
+  color: purple;
+}
+
+
+h1 {
+  margin: 0 auto;
+  text-shadow: 5px 5px black;
+}
+
+
+/* .square:hover {
+  background-color: yellow;
+  
+} */
+
+@keyframes blinker {
+    from {background-color: none;}
+    to {background-color: yellow;, opacity: 0.1}
+}
+
+.square:hover {
+    background-color: none;
+    animation-name: blinker;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
